@@ -23,12 +23,15 @@ public class BasePage {
     @FindBy(css = "#dropdown-menu a")
     public List<WebElement> headerDropdownOptions;
 
+    @FindBy(id = "Footer_facebook__UiT2a")
+    public WebElement facebookButton;
+
+    @FindBy(id = "Footer_instagram__0NXVy")
+    public WebElement instagramButton;
+
     // Mobile elements
     @FindBy(css = ".navbar-brand")
     public WebElement burgerMenu;
-
-    @FindBy(css = ".HomePage_pageTitle__UAMbk")
-    public WebElement mainHeading;
 
     public void clickOnCard(String cardText){
         for (WebElement headerDropdownOption : headerDropdownOptions) {
