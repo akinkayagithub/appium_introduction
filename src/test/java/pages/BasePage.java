@@ -14,10 +14,6 @@ public class BasePage {
     }
 
     //Common elements from the header and footer and some other common elements
-
-    @FindBy(id = "logo")
-    public WebElement logo;
-
     @FindBy(id = "dropdown-button")
     public WebElement headerDropdown;
 
