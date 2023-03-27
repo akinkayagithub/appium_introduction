@@ -14,7 +14,6 @@ public class BasePage {
     }
 
     //Common elements from the header and footer and some other common elements
-
     @FindBy(id = "logo")
     public WebElement logo;
 
@@ -23,6 +22,13 @@ public class BasePage {
 
     @FindBy(css = "#dropdown-menu a")
     public List<WebElement> headerDropdownOptions;
+
+    // Mobile elements
+    @FindBy(css = ".navbar-brand")
+    public WebElement burgerMenu;
+
+    @FindBy(css = ".HomePage_pageTitle__UAMbk")
+    public WebElement mainHeading;
 
     public void clickOnCard(String cardText){
         for (WebElement headerDropdownOption : headerDropdownOptions) {
